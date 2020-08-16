@@ -5,6 +5,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.zzl.dao.CheckGroupDao;
 import com.zzl.entity.PageResult;
+import com.zzl.entity.Result;
 import com.zzl.pojo.CheckGroup;
 import com.zzl.service.CheckGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,6 +65,10 @@ public class CheckGroupServiceImpl implements CheckGroupService {
         //重新建立当前检查组和检查项的关联关系
         this.setCheckGroupAndCheckItem(checkGroup.getId(),checkitemIds);
 
+    }
+
+    public List<CheckGroup> findAll(){
+        return checkGroupDao.findAll();
     }
 
     //建立检查组和检查项多对多关系

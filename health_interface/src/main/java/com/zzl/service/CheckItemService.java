@@ -2,7 +2,6 @@ package com.zzl.service;
 
 import com.zzl.entity.PageResult;
 import com.zzl.entity.QueryPageBean;
-import com.zzl.entity.Result;
 import com.zzl.pojo.CheckItem;
 
 import java.util.List;

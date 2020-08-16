@@ -273,11 +273,6 @@
 
                                     //新增成功之后，重新调用分页查询方法，查处最新的数据
                                     this.findPage();
-                                    //弹出提示信息
-                                    this.$message({
-                                        message:res.data.message,
-                                        type:'success'
-                                    });
                                 }else {
                                     this.$message.error(res.data.message);
                                 }
