@@ -13,6 +13,7 @@
         <module>health_service_provider</module>
         <module>health-backend</module>
         <module>health-jobs</module>
+        <module>health_mobile</module>
     </modules>
 
     <packaging>pom</packaging>

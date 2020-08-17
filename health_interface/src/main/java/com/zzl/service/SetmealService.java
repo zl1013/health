@@ -4,6 +4,8 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.zzl.entity.PageResult;
 import com.zzl.pojo.Setmeal;
 
+import java.util.List;
+
 
 /**
  * Description:
@@ -15,4 +17,7 @@ public interface SetmealService {
     void add(Setmeal setmeal,Integer[] checkgroupIds);
 
     PageResult pageQuery(Integer currentPage, Integer pageSize, String queryString);
+    public List<Setmeal> findAll();
+
+    Setmeal findById(int id);
 }

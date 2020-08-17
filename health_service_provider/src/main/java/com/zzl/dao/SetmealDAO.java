@@ -5,6 +5,7 @@ import com.zzl.entity.PageResult;
 import com.zzl.pojo.CheckGroup;
 import com.zzl.pojo.Setmeal;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,4 +18,7 @@ public interface SetmealDAO {
     void setSetmealAndCheckGroup(Map map);
     PageResult pageQuery(Integer currentPage, Integer pageSize, String queryString);
     Page<Setmeal> findByCondition(String queryString);
+    List<Setmeal> findAll();
+
+    Setmeal findById(int id);
 }
